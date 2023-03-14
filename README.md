@@ -1,4 +1,4 @@
-# bandwith_usage_usg_snmp
+# bandwidth_usage_usg_snmp
 
 
 use this to make a nice graph on bandwidth usage for your ubiquiti USG
