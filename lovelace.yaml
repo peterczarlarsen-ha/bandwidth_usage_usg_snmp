@@ -1,0 +1,26 @@
+type: custom:apexcharts-card
+header:
+  show: true
+  title: Gateway
+  show_states: true
+  colorize_states: true
+graph_span: 1h
+series:
+  - entity: sensor.wan_in_mbps
+    stroke_width: 0.4
+    group_by:
+      func: avg
+      duration: 60secs
+    show:
+      extremas: true
+      header_color_threshold: true
+    type: line
+    curve: stepline
+  - entity: sensor.wan_out_mbps
+    stroke_width: 0.4
+    group_by:
+      func: avg
+      duration: 60secs
+    show:
+      extremas: true
+      header_color_threshold: true
